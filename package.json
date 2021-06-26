@@ -4,7 +4,8 @@
   "version": "1.0.0",
   "description": "Proxies /favorites e621 requests since the endpoint doesn't support CORS",
   "scripts": {
-    "start": "vercel dev"
+    "start": "vercel dev",
+    "build": "echo build"
   },
   "repository": {
     "type": "git",
