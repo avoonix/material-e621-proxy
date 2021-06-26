@@ -1,0 +1,22 @@
+{
+  "name": "material-e621-proxy",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Proxies /favorites e621 requests since the endpoint doesn't support CORS",
+  "scripts": {
+    "start": "vercel dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/avoonix/material-e621-proxy.git"
+  },
+  "author": "Avoonix",
+  "license": "AGPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/avoonix/material-e621-proxy/issues"
+  },
+  "homepage": "https://github.com/avoonix/material-e621-proxy#readme",
+  "dependencies": {
+    "vercel": "^23.0.1"
+  }
+}
