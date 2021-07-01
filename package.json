@@ -18,6 +18,10 @@
   },
   "homepage": "https://github.com/avoonix/material-e621-proxy#readme",
   "dependencies": {
+    "@types/basic-auth": "^1.1.3",
+    "@types/superagent": "^4.1.11",
+    "basic-auth": "^2.0.1",
+    "superagent": "^6.1.0",
     "vercel": "^23.0.1"
   }
 }

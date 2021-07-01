@@ -4,19 +4,18 @@ import {
   allowCorsRequest,
   setResponseHeaders,
   setSuperagentHeaders,
-} from "../util";
+} from "../../util";
 
 export default async (req: VercelRequest, res: VercelResponse) => {
   if (!(await allowCorsRequest(req, res))) {
     return;
   }
+  setResponseHeaders(res);
   try {
-    const id = Number(req.body.post_id);
-    if (req.method === "POST" && id > 0) {
+    if (req.method === "DELETE") {
+      const id = Number(req.query.id);
       const response = await setSuperagentHeaders(
-        superagent.post("https://e621.net/favorites.json").send({
-          post_id: id,
-        }),
+        superagent.delete(`https://e621.net/favorites/${id}.json`),
         req
       );
       return res.status(response.status).send(response.text);
