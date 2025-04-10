@@ -25,6 +25,7 @@ export const allowCorsRequest = async (
 ) => {
   const allowedOrigins = [
     "https://material-e621.vercel.app",
+    "https://material-e621.avoonix.com",
     "http://localhost:8080",
   ];
   if (allowedOrigins.indexOf(req.headers.origin) === -1) {
